@@ -1,0 +1,7 @@
+/home/pex/Werk/Stella_VI_SLAM_Tracking/build/GCC_64_bit-Debug/CMakeFiles/Stella_VSLAM_Tracking.dir
+/home/pex/Werk/Stella_VI_SLAM_Tracking/build/GCC_64_bit-Debug/CMakeFiles/edit_cache.dir
+/home/pex/Werk/Stella_VI_SLAM_Tracking/build/GCC_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+/home/pex/Werk/Stella_VI_SLAM_Tracking/build/GCC_64_bit-Debug/CMakeFiles/list_install_components.dir
+/home/pex/Werk/Stella_VI_SLAM_Tracking/build/GCC_64_bit-Debug/CMakeFiles/install.dir
+/home/pex/Werk/Stella_VI_SLAM_Tracking/build/GCC_64_bit-Debug/CMakeFiles/install/local.dir
+/home/pex/Werk/Stella_VI_SLAM_Tracking/build/GCC_64_bit-Debug/CMakeFiles/install/strip.dir
