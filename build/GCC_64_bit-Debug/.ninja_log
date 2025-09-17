@@ -1,4 +1,0 @@
-# ninja log v6
-2	305	1758013445855205591	CMakeFiles/Stella_VSLAM_Tracking.dir/src/UDPSender.cpp.o	b5d8901a351f1737
-4	5721	1758014239116743785	CMakeFiles/Stella_VSLAM_Tracking.dir/src/main.cpp.o	4348c5114ce6b1f0
-5721	6097	1758014244833678511	Stella_VSLAM_Tracking	f877b8f64688626d
