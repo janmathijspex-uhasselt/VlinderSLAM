@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(Stella_VSLAM_Tracking LANGUAGES C CXX)
+project(VlinderSLAM LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -18,10 +18,14 @@ set(SOURCES
 set(HEADERS
     include/UDPMessage.h
     include/UDPSender.h
+    include/PoseIO.h
 )
 
 # Create executable
-add_executable(Stella_VSLAM_Tracking ${SOURCES} ${HEADERS})
+add_executable(VlinderSLAM ${SOURCES} ${HEADERS})
+
+# Set opencv directory to opencv v4
+set(OpenCV_DIR /usr/local/lib/cmake/opencv4)
 
 # Required packages
 find_package(stella_vslam REQUIRED)
@@ -32,7 +36,7 @@ find_package(realsense2 REQUIRED)
 find_package(pangolin_viewer REQUIRED)
 
 # Include directories
-target_include_directories(Stella_VSLAM_Tracking PRIVATE
+target_include_directories(VlinderSLAM PRIVATE
     ${OpenCV_INCLUDE_DIRS}
     /usr/local/include/DeviceFactory
 )
@@ -41,7 +45,7 @@ target_include_directories(Stella_VSLAM_Tracking PRIVATE
 find_library(DEVICE_FACTORY_LIB DeviceFactory PATHS /usr/local/lib)
 
 # Link libraries
-target_link_libraries(Stella_VSLAM_Tracking PRIVATE
+target_link_libraries(VlinderSLAM PRIVATE
     stella_vslam::stella_vslam
     ${OpenCV_LIBS}
     Eigen3::Eigen
@@ -52,7 +56,7 @@ target_link_libraries(Stella_VSLAM_Tracking PRIVATE
 )
 
 include(GNUInstallDirs)
-install(TARGETS Stella_VSLAM_Tracking
+install(TARGETS VlinderSLAM
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )

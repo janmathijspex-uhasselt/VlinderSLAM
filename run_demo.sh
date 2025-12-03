@@ -1,0 +1,1 @@
+./build/Desktop-Debug/VlinderSLAM assets/orb_vocab.fbow assets/stella_config_rs_d455.yml assets/map_FM_Leuven_Robot.msg assets/RealSense2_1280x720.txt assets/proj_intrinsics.txt assets/proj_extrinsic.txt

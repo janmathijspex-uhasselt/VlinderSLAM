@@ -2,7 +2,6 @@
 #ifndef UDPSENDER_H
 #define UDPSENDER_H
 
-#include <iostream>
 #include <netinet/in.h>   // sockaddr_in, htons, etc.
 #include <sys/socket.h>   // socket(), sendto(), etc.
 #include <arpa/inet.h>    // inet_addr()
@@ -20,7 +19,7 @@ private:
 public:
     UDPSender(const std::string& ip, int port);
     ~UDPSender();
-    void sendData(const UDPMessage& msg);
+    void send_data(const UDPMessage& msg);
 };
 
 #endif // UDPSENDER_H

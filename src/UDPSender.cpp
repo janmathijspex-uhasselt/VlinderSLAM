@@ -24,7 +24,7 @@ UDPSender::~UDPSender() {
     close(sock);
 }
 
-void UDPSender::sendData(const UDPMessage& msg) {
+void UDPSender::send_data(const UDPMessage& msg) {
     int bytesSent = sendto(sock, reinterpret_cast<const char*>(&msg), sizeof(UDPMessage), 0,
                            (sockaddr*)&receiverAddr, sizeof(receiverAddr));
 
